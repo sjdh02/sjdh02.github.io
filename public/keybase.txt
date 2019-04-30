@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/sjdh02
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://sjdh.us
+  * I am sjdh02 (https://keybase.io/sjdh02) on keybase.
+  * I have a public key with fingerprint EDAC F863 D892 4B2D DD54  4FFA C8FA F6D6 0FA0 B0F3
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01019c794f8ffbcc0d7285089b2b937439c887b4f08effb48159a2d2077d8eddfce60a",
+      "fingerprint": "edacf863d8924b2ddd544ffac8faf6d60fa0b0f3",
+      "host": "keybase.io",
+      "key_id": "c8faf6d60fa0b0f3",
+      "kid": "01019c794f8ffbcc0d7285089b2b937439c887b4f08effb48159a2d2077d8eddfce60a",
+      "uid": "db8076a001a78bc19351e57538466919",
+      "username": "sjdh02"
+    },
+    "service": {
+      "hostname": "sjdh.us",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1556136575,
+  "expire_in": 157680000,
+  "prev": "0e87e0fd0e626119f5a6ffd16ddbe8b4f085c859628caec28016b9589e260259",
+  "seqno": 34,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.0
+Comment: https://keybase.io/crypto
+
+yMIhAnicrZJbSFRBGMd33SwVNIkgoSdPiaKic25z5iw9pGYElVZkWS1s55yZ0ZO6
+u+05uyqySApJBnbRQsJKpDJJ6i27SHgrMevBjIos8UJZpCSSPvXQOVLQQ4/NyzDf
+/P7f/L8/MxTvcsQ537PZMy9uMz+do/0XQg5P30BtDaP6cTXjrmHKyOpGyjExTG+Z
+jhk3A1jAypokCxRRqmoawBKHRIBklVNlXhJ4WUNIUgUKELEAAbGirHCYA5KEEcGY
+agQChclkqO4rIcFAUPeZVluCFY0iyGMkc4LKYYxFQaBU0RBVKMQQUAWogPKWsNRv
+2ArLnKoYJEv3WzXr4F219w/+P/sOrbbDKgISVABgFQmpGivzIktESeSRAKHMyjZo
+kKBPqSAWbZzApYBjIpmMVQvrGrFjtef46z4rZFiiQNBv+jV/uVUsNc2A4bZFZnXA
+piqJ6v2t96q6D1sBWoowCRq638e4WYvUTN1uyIoiZHlo+clkSFVADxKvbhOiBBGw
+lv0OCdupECQRQDEgkIMsK1NRgZRiFmKsErSahqghUYYc0hSicQiwUJVFJBMOAk60
+xzTISZ+fcfOC5VMpsYfRS3yKGQoSJjLQ51njcMY51kZH2T/LEReb+Oe/tYVjHK8e
+5+HZqO2ub+tDk7lDU2l3GldSYse9JTMj6e4PGXqH2QpObTk/8SxVe97Qsvvc97Id
+u6KWe5KvLhQXPGnScws8i4fGVnKcU4Heuexi/dJ9qbnu8uKVxrmltKP7asNksnu6
+bv6BvNRfuCm+KzGmK+O0WlR0kW/YOFbk8o7e3Psx+9hCW/nw5onuN1v7XkZVnLne
+m77Skd/tqbzb1ZmSOHNjpJ0cyHP1HHY1J7QWr2sxcuq/Dia966za4+mfvjZbkPRQ
+1J8OH/zy+fj+8UOJo8ktR84u56TOJ4x/yt5ZEYkvLIi+FdkAct+qlU2DcPLHfMA0
+2+WlwKN7bH5Kav22yte/AO/aQdU=
+=IQEj
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sjdh02
+
+==================================================================
+
