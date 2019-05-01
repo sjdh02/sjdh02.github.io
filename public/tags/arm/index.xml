@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>arm on 0x738</title>
+    <link>https://sjdh.us/tags/arm/</link>
+    <description>Recent content in arm on 0x738</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Feb 2019 18:30:32 -0500</lastBuildDate>
+    
+	<atom:link href="https://sjdh.us/tags/arm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Moving to Zig for ARM Development</title>
+      <link>https://sjdh.us/posts/continuing-with-zig/</link>
+      <pubDate>Mon, 11 Feb 2019 18:30:32 -0500</pubDate>
+      
+      <guid>https://sjdh.us/posts/continuing-with-zig/</guid>
+      <description>This commit is an example of a serious decision for any codebase: the decision to change the implementation language. This is more or less complicated for a given codebase depending on its size and who&amp;rsquo;s working on it. I&amp;rsquo;ll be the first to admit that trOS isn&amp;rsquo;t big and switching languages right now is far from a big problem - and it may never be. Nevertheless, given that it&amp;rsquo;s my main project right now, the language I use to write it matters a lot.</description>
+    </item>
+    
+  </channel>
+</rss>

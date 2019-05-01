@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://sjdh.us/</loc>
+    <lastmod>2019-04-27T07:35:51-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/posts/</loc>
+    <lastmod>2019-04-27T07:35:51-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/tags/</loc>
+    <lastmod>2019-04-27T07:35:51-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/posts/wl-n1/</loc>
+    <lastmod>2019-04-27T07:35:51-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/tags/compilers/</loc>
+    <lastmod>2019-04-27T07:35:51-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/tags/log/</loc>
+    <lastmod>2019-04-27T07:35:51-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/tags/website/</loc>
+    <lastmod>2019-04-27T07:35:51-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/about/</loc>
+    <lastmod>2019-04-22T19:56:54-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/posts/compiler-recursive-types/</loc>
+    <lastmod>2019-04-22T19:54:41-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/tags/blog/</loc>
+    <lastmod>2019-04-22T19:54:41-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/tags/rust/</loc>
+    <lastmod>2019-04-22T19:54:41-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/posts/continuing-with-zig/</loc>
+    <lastmod>2019-02-11T18:30:32-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/tags/arm/</loc>
+    <lastmod>2019-02-11T18:30:32-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/tags/osdev/</loc>
+    <lastmod>2019-02-11T18:30:32-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/tags/rpi3/</loc>
+    <lastmod>2019-02-11T18:30:32-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/tags/zig/</loc>
+    <lastmod>2019-02-11T18:30:32-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>website on 0x738</title>
+    <link>https://sjdh.us/tags/website/</link>
+    <description>Recent content in website on 0x738</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Apr 2019 07:35:51 -0500</lastBuildDate>
+    
+	<atom:link href="https://sjdh.us/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Week Log: Entry №1</title>
+      <link>https://sjdh.us/posts/wl-n1/</link>
+      <pubDate>Sat, 27 Apr 2019 07:35:51 -0500</pubDate>
+      
+      <guid>https://sjdh.us/posts/wl-n1/</guid>
+      <description>Welcome to the first of the week log posts, wherein I go over what I got done this week regarding programming and such. One of these will be posted each Saturday or Sunday, depending on my schedule.
+First off, the compiler:
+ I&amp;rsquo;ve (mostly) completed messing about with the syntax for now, I quite like how its turned out.
+ The parser is complete, though it took some time to get there.</description>
+    </item>
+    
+  </channel>
+</rss>

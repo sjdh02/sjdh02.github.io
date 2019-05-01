@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 0x738</title>
+    <link>https://sjdh.us/tags/</link>
+    <description>Recent content in Tags on 0x738</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Apr 2019 07:35:51 -0500</lastBuildDate>
+    
+	<atom:link href="https://sjdh.us/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>compilers</title>
+      <link>https://sjdh.us/tags/compilers/</link>
+      <pubDate>Sat, 27 Apr 2019 07:35:51 -0500</pubDate>
+      
+      <guid>https://sjdh.us/tags/compilers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>log</title>
+      <link>https://sjdh.us/tags/log/</link>
+      <pubDate>Sat, 27 Apr 2019 07:35:51 -0500</pubDate>
+      
+      <guid>https://sjdh.us/tags/log/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>website</title>
+      <link>https://sjdh.us/tags/website/</link>
+      <pubDate>Sat, 27 Apr 2019 07:35:51 -0500</pubDate>
+      
+      <guid>https://sjdh.us/tags/website/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://sjdh.us/tags/blog/</link>
+      <pubDate>Mon, 22 Apr 2019 19:54:41 -0500</pubDate>
+      
+      <guid>https://sjdh.us/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rust</title>
+      <link>https://sjdh.us/tags/rust/</link>
+      <pubDate>Mon, 22 Apr 2019 19:54:41 -0500</pubDate>
+      
+      <guid>https://sjdh.us/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arm</title>
+      <link>https://sjdh.us/tags/arm/</link>
+      <pubDate>Mon, 11 Feb 2019 18:30:32 -0500</pubDate>
+      
+      <guid>https://sjdh.us/tags/arm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>osdev</title>
+      <link>https://sjdh.us/tags/osdev/</link>
+      <pubDate>Mon, 11 Feb 2019 18:30:32 -0500</pubDate>
+      
+      <guid>https://sjdh.us/tags/osdev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rpi3</title>
+      <link>https://sjdh.us/tags/rpi3/</link>
+      <pubDate>Mon, 11 Feb 2019 18:30:32 -0500</pubDate>
+      
+      <guid>https://sjdh.us/tags/rpi3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zig</title>
+      <link>https://sjdh.us/tags/zig/</link>
+      <pubDate>Mon, 11 Feb 2019 18:30:32 -0500</pubDate>
+      
+      <guid>https://sjdh.us/tags/zig/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
