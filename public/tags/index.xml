@@ -6,15 +6,24 @@
     <description>Recent content in Tags on 0x738</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Apr 2019 07:35:51 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 04 May 2019 13:08:11 -0500</lastBuildDate>
     
 	<atom:link href="https://sjdh.us/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>books</title>
+      <link>https://sjdh.us/tags/books/</link>
+      <pubDate>Sat, 04 May 2019 13:08:11 -0500</pubDate>
+      
+      <guid>https://sjdh.us/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>compilers</title>
       <link>https://sjdh.us/tags/compilers/</link>
-      <pubDate>Sat, 27 Apr 2019 07:35:51 -0500</pubDate>
+      <pubDate>Sat, 04 May 2019 13:08:11 -0500</pubDate>
       
       <guid>https://sjdh.us/tags/compilers/</guid>
       <description></description>
@@ -23,7 +32,7 @@
     <item>
       <title>log</title>
       <link>https://sjdh.us/tags/log/</link>
-      <pubDate>Sat, 27 Apr 2019 07:35:51 -0500</pubDate>
+      <pubDate>Sat, 04 May 2019 13:08:11 -0500</pubDate>
       
       <guid>https://sjdh.us/tags/log/</guid>
       <description></description>

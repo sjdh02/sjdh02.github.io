@@ -6,10 +6,22 @@
     <description>Recent content on 0x738</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Apr 2019 07:35:51 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 04 May 2019 13:08:11 -0500</lastBuildDate>
     
 	<atom:link href="https://sjdh.us/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Week Log: Entry №2</title>
+      <link>https://sjdh.us/posts/wl-n2/</link>
+      <pubDate>Sat, 04 May 2019 13:08:11 -0500</pubDate>
+      
+      <guid>https://sjdh.us/posts/wl-n2/</guid>
+      <description>Time for another week log.
+Compiler:
+ As this was finals week at my University, I was unable to do much work on the compiler. I stubbed out some of the logic for the analyzer, and made plans to move from a tokenizer/parser combo to a streaming parser. This should simplify some of the logic in the parser.   Website:
+ Moved over one old entry, as requested in an e-mail.</description>
+    </item>
     
     <item>
       <title>Week Log: Entry №1</title>
