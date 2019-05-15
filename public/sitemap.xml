@@ -4,53 +4,7 @@
   
   <url>
     <loc>https://sjdh.us/</loc>
-    <lastmod>2019-05-04T13:08:11-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sjdh.us/posts/</loc>
-    <lastmod>2019-05-04T13:08:11-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sjdh.us/tags/</loc>
-    <lastmod>2019-05-04T13:08:11-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sjdh.us/posts/wl-n2/</loc>
-    <lastmod>2019-05-04T13:08:11-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sjdh.us/tags/books/</loc>
-    <lastmod>2019-05-04T13:08:11-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sjdh.us/tags/compilers/</loc>
-    <lastmod>2019-05-04T13:08:11-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sjdh.us/tags/log/</loc>
-    <lastmod>2019-05-04T13:08:11-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sjdh.us/posts/wl-n1/</loc>
-    <lastmod>2019-04-27T07:35:51-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sjdh.us/tags/website/</loc>
-    <lastmod>2019-04-27T07:35:51-05:00</lastmod>
+    <lastmod>2019-04-22T19:56:54-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -60,12 +14,30 @@
   </url>
   
   <url>
+    <loc>https://sjdh.us/posts/</loc>
+    <lastmod>2019-04-22T19:54:41-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/tags/</loc>
+    <lastmod>2019-04-22T19:54:41-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://sjdh.us/posts/compiler-recursive-types/</loc>
     <lastmod>2019-04-22T19:54:41-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://sjdh.us/tags/blog/</loc>
+    <lastmod>2019-04-22T19:54:41-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/tags/compilers/</loc>
     <lastmod>2019-04-22T19:54:41-05:00</lastmod>
     <priority>0</priority>
   </url>
