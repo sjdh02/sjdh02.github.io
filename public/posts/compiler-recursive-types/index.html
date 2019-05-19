@@ -36,10 +36,12 @@ Writing Recursively Defined Types in Rust - 0x738
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Writing Recursively Defined Types in Rust"/>
-<meta name="twitter:description" content="Parsing is the step in the compilation of a program where individual tokens are grouped into expressions, which can then be further analyzed before being translated into machine code. In order to do this, sets of tokens must be identifiable as singular expressions, so that they may be grouped up to form meaning. My language is quite free-form when it comes to what expressions are allowed where (as are many), and representing this kind of freedom in a compiler&rsquo;s source code is best done with recursive types."/>
+<meta name="twitter:description" content="Let&rsquo;s say we&rsquo;re writing a theoretical compiler, and we want to teach it how to parse some math expressions. Consider this snippet of source code:
+(&#43; (- 20 10) 7)  In this example, we see a math expression. The operator in this case is &#43;, and the operands are another math expression and 7. Internally, the compiler sees these operands as just two more distinct expressions (literals are a type of expression)."/>
 
 <meta property="og:title" content="Writing Recursively Defined Types in Rust" />
-<meta property="og:description" content="Parsing is the step in the compilation of a program where individual tokens are grouped into expressions, which can then be further analyzed before being translated into machine code. In order to do this, sets of tokens must be identifiable as singular expressions, so that they may be grouped up to form meaning. My language is quite free-form when it comes to what expressions are allowed where (as are many), and representing this kind of freedom in a compiler&rsquo;s source code is best done with recursive types." />
+<meta property="og:description" content="Let&rsquo;s say we&rsquo;re writing a theoretical compiler, and we want to teach it how to parse some math expressions. Consider this snippet of source code:
+(&#43; (- 20 10) 7)  In this example, we see a math expression. The operator in this case is &#43;, and the operands are another math expression and 7. Internally, the compiler sees these operands as just two more distinct expressions (literals are a type of expression)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sjdh.us/posts/compiler-recursive-types/" />
 <meta property="article:published_time" content="2019-04-22T19:54:41-05:00"/>
@@ -64,7 +66,7 @@ Writing Recursively Defined Types in Rust - 0x738
 
         
 <div class="section" id="content">
-    Mon Apr 22, 2019 &#183; 1047 words
+    Mon Apr 22, 2019 &#183; 955 words
     
     <div class="tag-container">
         
@@ -91,13 +93,8 @@ Writing Recursively Defined Types in Rust - 0x738
     <hr/>
     
 
-<p>Parsing is the step in the compilation of a program where individual tokens are grouped into expressions, which can then be further analyzed before being
-translated into machine code. In order to do this, sets of tokens must be identifiable as singular expressions, so that they may be grouped up to form
-meaning. My language is quite free-form when it comes to what expressions are allowed where (as are many), and representing this kind of freedom in a
-compiler&rsquo;s source code is best done with recursive types. In this entry, I&rsquo;ll take a small subset of my compiler and explain how this recursive type
-definition can be achieved in Rust.</p>
-
-<p>Consider this snippet of source code:</p>
+<p>Let&rsquo;s say we&rsquo;re writing a theoretical compiler, and we want to teach it how to parse some math expressions.
+Consider this snippet of source code:</p>
 
 <pre><code>(+ (- 20 10) 7)
 </code></pre>
@@ -112,7 +109,7 @@ EXPR &lt;-- MATHEXPR | NUMLIT
 MATHEXPR &lt;-- OPERATOR EXPR EXPR
 </code></pre>
 
-<p>As you can see, each math expression could potentially contain two more math expressions. This could theoretically repeat forever,
+<p>As you can see, each math expression could contain two more math expressions. This could theoretically repeat forever,
 with each new math expression containing two more new math expressions, and so on. Furthermore, as <code>EXPR</code> increases in scope; that is,
 it gains more possible expression types, <code>MATHEXPR</code> gains more functionality. If you added a function call expression, then a math
 expression could contain a function call as an operand, and so on<sup>1</sup>.</p>
@@ -185,7 +182,7 @@ only decreased the reference-count by one, leaving it at one reference remaining
 the memory will be freed.</p>
 
 <p>As an aside, note that the presented <code>Rc</code> example would work with <code>Box</code> too - you can <code>.clone()</code> a <code>Box</code> with
-no problems. However, as mentioned, cloning a box will also clone the value within it, effectively
+no problems. However, as mentioned, cloning a <code>Box</code> will also clone the value within it, effectively
 doubling your allocations. Cloning an <code>Rc</code> will simply return a pointer to the same data and increase the reference-count.
 Because of this ambiguous nature, when cloning <code>Rc</code>s the better syntax is <code>Rc::clone(&amp;from)</code>, as it is more clear
 about what&rsquo;s actually happening.</p>

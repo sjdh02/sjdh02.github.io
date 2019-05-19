@@ -6,12 +6,7 @@ draft: false
 tags: ["blog","compilers","rust"]
 ---
 
-Parsing is the step in the compilation of a program where individual tokens are grouped into expressions, which can then be further analyzed before being
-translated into machine code. In order to do this, sets of tokens must be identifiable as singular expressions, so that they may be grouped up to form
-meaning. My language is quite free-form when it comes to what expressions are allowed where (as are many), and representing this kind of freedom in a 
-compiler's source code is best done with recursive types. In this entry, I'll take a small subset of my compiler and explain how this recursive type 
-definition can be achieved in Rust.
-
+Let's say we're writing a theoretical compiler, and we want to teach it how to parse some math expressions.
 Consider this snippet of source code:
 ```
 (+ (- 20 10) 7)
@@ -25,7 +20,7 @@ OPERATOR <-- + | - | / | *
 EXPR <-- MATHEXPR | NUMLIT
 MATHEXPR <-- OPERATOR EXPR EXPR
 ```
-As you can see, each math expression could potentially contain two more math expressions. This could theoretically repeat forever,
+As you can see, each math expression could contain two more math expressions. This could theoretically repeat forever,
 with each new math expression containing two more new math expressions, and so on. Furthermore, as `EXPR` increases in scope; that is,
 it gains more possible expression types, `MATHEXPR` gains more functionality. If you added a function call expression, then a math
 expression could contain a function call as an operand, and so on<sup>1</sup>.
@@ -99,7 +94,7 @@ only decreased the reference-count by one, leaving it at one reference remaining
 the memory will be freed.
 
 As an aside, note that the presented `Rc` example would work with `Box` too - you can `.clone()` a `Box` with
-no problems. However, as mentioned, cloning a box will also clone the value within it, effectively
+no problems. However, as mentioned, cloning a `Box` will also clone the value within it, effectively
 doubling your allocations. Cloning an `Rc` will simply return a pointer to the same data and increase the reference-count.
 Because of this ambiguous nature, when cloning `Rc`s the better syntax is `Rc::clone(&from)`, as it is more clear
 about what's actually happening.
