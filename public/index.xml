@@ -6,10 +6,19 @@
     <description>Recent content on 0x738</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Apr 2019 19:56:54 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 07 Jun 2019 15:59:22 -0500</lastBuildDate>
     
 	<atom:link href="https://sjdh.us/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Updates</title>
+      <link>https://sjdh.us/posts/updates/</link>
+      <pubDate>Fri, 07 Jun 2019 15:59:22 -0500</pubDate>
+      
+      <guid>https://sjdh.us/posts/updates/</guid>
+      <description>Now that the spring semester at my University has concluded, I&amp;rsquo;ve begun the process of relocating to an apartment near my Uni&amp;rsquo;s main campus to finish out my bachleors over the next few years. One thing that&amp;rsquo;s been awfully helpful to me in my process of moving is that I&amp;rsquo;ve always tried to minimize the number of things I own, which is a topic I might go into more detail on in another post.</description>
+    </item>
     
     <item>
       <title>about</title>
@@ -17,7 +26,7 @@
       <pubDate>Mon, 22 Apr 2019 19:56:54 -0500</pubDate>
       
       <guid>https://sjdh.us/about/</guid>
-      <description>Hello! My name is Sam Hood. I&amp;rsquo;m a computer science and information security student in Texas, currently wrapping up his first year of full time university. My main areas of interest are operating systems, embedded systems, and compilers. My main programming languages are C/++, Rust, and Zig, plus occassional flirtation with web technologies.
+      <description>Hello! My name is Sam Hood. I&amp;rsquo;m a computer science student from Texas, wrapping up my first full year of University. My main areas of interest are programming language theory, type theory, and compiler engineering. My main programming languages are C/++ and Haskell, along with some newer systems languages like Zig and, to a lesser extent, Rust.
 If you want to get in contact with me, you can email me at sjdh AT sjdh DOT us.</description>
     </item>
     
