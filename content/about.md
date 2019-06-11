@@ -17,10 +17,10 @@ I'm Sam Hood, a computer science and math student from Texas. I'm currently in m
 * OnePlus 7 Pro
 
 ## Software
-Editor: Emacs + Solarized Dark
-Main OS: macOS
-TerminaL: iTerm2
-E-Mail Client: neomutt
-Web Browser: Firefox
+* Editor: Emacs + Solarized Dark
+* Main OS: macOS
+* Terminal: iTerm2
+* E-Mail Client: neomutt
+* Web Browser: Firefox
 
 
