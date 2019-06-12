@@ -6,7 +6,7 @@
     <description>Recent content in Tags on 0x738</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Jun 2019 15:59:22 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 11 Jun 2019 19:55:12 -0500</lastBuildDate>
     
 	<atom:link href="https://sjdh.us/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,27 @@
     <item>
       <title>blog</title>
       <link>https://sjdh.us/tags/blog/</link>
-      <pubDate>Fri, 07 Jun 2019 15:59:22 -0500</pubDate>
+      <pubDate>Tue, 11 Jun 2019 19:55:12 -0500</pubDate>
       
       <guid>https://sjdh.us/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ideology</title>
+      <link>https://sjdh.us/tags/ideology/</link>
+      <pubDate>Tue, 11 Jun 2019 19:55:12 -0500</pubDate>
+      
+      <guid>https://sjdh.us/tags/ideology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>opinion</title>
+      <link>https://sjdh.us/tags/opinion/</link>
+      <pubDate>Tue, 11 Jun 2019 19:55:12 -0500</pubDate>
+      
+      <guid>https://sjdh.us/tags/opinion/</guid>
       <description></description>
     </item>
     
