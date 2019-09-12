@@ -17,8 +17,7 @@
       <pubDate>Tue, 11 Jun 2019 19:55:12 -0500</pubDate>
       
       <guid>https://sjdh.us/posts/social-media/</guid>
-      <description>Lately, I&amp;rsquo;ve had some friends ask me why I don&amp;rsquo;t use social media outside of Reddit and Snapchat. Here are some general and loosely-connected thoughts on social media and what I don&amp;rsquo;t like about it.
-The main reason I don&amp;rsquo;t care for social media is that it encourages group-think. There are plenty of examples of this; though Twitter is especially bad about it. Part of it is a human issue - many people are far too eager to attack someone who seemingly disagrees with them instead of having a discussion about it - but the other part of it lies within the social media network&amp;rsquo;s architecture.</description>
+      <description>Lately, I&amp;rsquo;ve seen what seems like a rise in people who are taking breaks or alltogether leaving social media platforms for one reason or another. I&amp;rsquo;ve never been fond of it either - I use Reddit and Snapchat exclusively - but I&amp;rsquo;ve never taken the time to lay out some thoughts on why. I figured this would be a good start to expanding the variety of content on my page here, so lets get into it.</description>
     </item>
     
     <item>
@@ -27,17 +26,7 @@ The main reason I don&amp;rsquo;t care for social media is that it encourages gr
       <pubDate>Fri, 07 Jun 2019 15:59:22 -0500</pubDate>
       
       <guid>https://sjdh.us/posts/updates/</guid>
-      <description>Now that the spring semester at my University has concluded, I&amp;rsquo;ve begun the process of relocating to an apartment near my Uni&amp;rsquo;s main campus to finish out my bachelors over the next few years. One thing that&amp;rsquo;s been awfully helpful to me in my process of moving is that I&amp;rsquo;ve always tried to minimize the number of things I own, which is a topic I might go into more detail on in another post.</description>
-    </item>
-    
-    <item>
-      <title>Writing Recursively Defined Types in Rust</title>
-      <link>https://sjdh.us/posts/compiler-recursive-types/</link>
-      <pubDate>Mon, 22 Apr 2019 19:54:41 -0500</pubDate>
-      
-      <guid>https://sjdh.us/posts/compiler-recursive-types/</guid>
-      <description>Let&amp;rsquo;s say we&amp;rsquo;re writing a theoretical compiler, and we want to teach it how to parse some math expressions. Consider this snippet of source code:
-(+ (- 20 10) 7)  In this example, we see a math expression. The operator in this case is +, and the operands are another math expression and 7. Internally, the compiler sees these operands as just two more distinct expressions (literals are a type of expression).</description>
+      <description>The spring semester has officialy ended for me, and I&amp;rsquo;ve recently begun the process of relocating to attend my universities main campus for the rest of my undergrad degree. While I&amp;rsquo;ll be quiet for most of this summer (and I&amp;rsquo;m sure a bit into the fall), I do plan to expand the scope of this blog as well as write more. I think of this as more of a personal journal, rather than a fully technical oriented blog.</description>
     </item>
     
   </channel>

@@ -7,20 +7,19 @@ showDate: false
 I'm Sam Hood, a computer science and math student from Texas. I'm currently in my second year of university, and my main interests lie in the areas of programming language theory, type systems, and compiler engineering. I've also done a good amount of embedded development in the past, as well as dabbling in operating systems. I have experience with both different programming languages and programming styles; however, I mainly subscribe to procedural and functional styles. My current main programming languages are C/++ and Haskell, however I have a small amount of experience in other functional languages like OCaml and Clojure, and more substantial experience in many other imperative languages. I also enjoy trying out new small languages; I currently enjoy working with Zig, among others. If you want to contact me, I am available via e-mail at the link below - feel free to request other ways to contact me, but I would prefer if you'd use e-mail. Beyond that, this page also lists the hardware and software I use that I've received questions about.
 
 ## Links
-* [E-Mail](mailto:sjdh@sjdh.us)
+* [E-Mail](mailto:samjdhood@gmail.com)
 * [GitHub](https://github.com/sjdh02)
 
 ## Hardware
 * Macbook Pro (2018) - i7-8750H/16GB RAM
-* ThinkPad Thunderbolt 3 Dock
+* Anker USB-C Dongle
 * Dell U3417W Ultrawide Monitor
-* OnePlus 7 Pro
+* IPhone XS Max
 
 ## Software
 * Editor: Emacs + Solarized Dark
 * Main OS: macOS
 * Terminal: iTerm2
-* E-Mail Client: neomutt
-* Web Browser: Firefox
+* Web Browser: Safari
 
 

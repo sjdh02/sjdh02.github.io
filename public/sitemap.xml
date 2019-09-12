@@ -5,7 +5,16 @@
   <url>
     <loc>https://sjdh.us/</loc>
     <lastmod>2019-06-11T19:55:12-05:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/tags/blog/</loc>
+    <lastmod>2019-06-11T19:55:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sjdh.us/tags/ideology/</loc>
+    <lastmod>2019-06-11T19:55:12-05:00</lastmod>
   </url>
   
   <url>
@@ -14,33 +23,23 @@
   </url>
   
   <url>
+    <loc>https://sjdh.us/tags/opinion/</loc>
+    <lastmod>2019-06-11T19:55:12-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sjdh.us/posts/</loc>
     <lastmod>2019-06-11T19:55:12-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://sjdh.us/tags/</loc>
     <lastmod>2019-06-11T19:55:12-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://sjdh.us/tags/blog/</loc>
-    <lastmod>2019-06-11T19:55:12-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sjdh.us/tags/ideology/</loc>
-    <lastmod>2019-06-11T19:55:12-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sjdh.us/tags/opinion/</loc>
-    <lastmod>2019-06-11T19:55:12-05:00</lastmod>
-    <priority>0</priority>
+    <loc>https://sjdh.us/tags/personal/</loc>
+    <lastmod>2019-06-07T15:59:22-05:00</lastmod>
   </url>
   
   <url>
@@ -49,31 +48,13 @@
   </url>
   
   <url>
-    <loc>https://sjdh.us/tags/personal/</loc>
-    <lastmod>2019-06-07T15:59:22-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://sjdh.us/about/</loc>
     <lastmod>2019-04-22T19:56:54-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sjdh.us/posts/compiler-recursive-types/</loc>
-    <lastmod>2019-04-22T19:54:41-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://sjdh.us/tags/compilers/</loc>
-    <lastmod>2019-04-22T19:54:41-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sjdh.us/tags/rust/</loc>
-    <lastmod>2019-04-22T19:54:41-05:00</lastmod>
-    <priority>0</priority>
+    <loc>https://sjdh.us/tags/arm/</loc>
+    <lastmod>2019-02-11T18:30:32-05:00</lastmod>
   </url>
   
   <url>
@@ -82,32 +63,22 @@
   </url>
   
   <url>
-    <loc>https://sjdh.us/tags/arm/</loc>
-    <lastmod>2019-02-11T18:30:32-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://sjdh.us/tags/osdev/</loc>
     <lastmod>2019-02-11T18:30:32-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://sjdh.us/tags/rpi3/</loc>
     <lastmod>2019-02-11T18:30:32-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://sjdh.us/tags/zig/</loc>
     <lastmod>2019-02-11T18:30:32-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://sjdh.us/categories/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

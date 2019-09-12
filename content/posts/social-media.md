@@ -6,31 +6,13 @@ draft: false
 tags: ["blog","opinion","ideology"]
 ---
 
-Lately, I've had some friends ask me why I don't use social media
-outside of Reddit and Snapchat. Here are some general and loosely-connected
-thoughts on social media and what I don't like about it.
+Lately, I've seen what seems like a rise in people who are taking breaks or alltogether leaving social media platforms for one reason or another. I've never been fond of it either - I use Reddit and Snapchat exclusively - but I've never taken the time to lay out some thoughts on why. I figured this would be a good start to expanding the variety of content on my page here, so lets get into it.
 
-The main reason I don't care for social media is that it encourages group-think.
-There are plenty of examples of this; though Twitter is especially bad about it. 
-Part of it is a human issue - many people are far too eager to attack someone 
-who seemingly disagrees with them instead of having a discussion about it - 
-but the other part of it lies within the social media network's architecture. 
-When posts are tagged with likes, retweets, upvotes, whatever - they make it
-painfully clear when someone is being ignored, or left out. Many times this leads
-to that person subtly adjusting what they say to better fit in with what appears popular,
-which in turn decreases the diversity of opinions and stifles discussion - one of the main points of social media.
 
-I also find social media to be the biggest time sink of the 21st century. 
-So many people - including myself, at times - use it to just kill time, when
-there are certainly better things they could be doing. Its also a great way to
-procrastinate, as can been seen by the insane post counts of a lot of accounts.
+I find that many social media platforms encourage group-think. Social media platforms seem to bring out the more, er, "tribalistic" side in many people, resulting in them instantly attacking anyone who disagrees with them. On top of this, when someone makes a post that recieves likes (or whatever the sites name of choice is), it creates a positive-feedback loop, which leads them to say more things like whatever got them the attention in the first place. Inversely, if they make a post that recieves no attention or negative attention, they are likely to shy away from posting anything like it again. Ultimately, this leads to a lack of diversity in opinions, which stifles discussion - the supposed point of social media to begin with.
 
-Beyond that, the general lack of regard for the treatment of private information social media companies
-- Facebook in particular - seem to exhibit is pathetic. I wouldn't want to have any hand in
-supporting any of their behavior, and I doubt other sites are much better.
+Social media can also become a pretty serious time sink. Its easy to just browse whatever to pass the time, when you could be doing something more useful.
 
-Overall, while social media certainly has its good points - I find Reddit very useful
-for keeping up and discussing topics I enjoy, for example - more often than not it ends up being
-detrimental to its users. Whether it be group-think encouragement, time-wasting, or data 
-leaking, I contend you're better off just avoiding it.
+Lastly, privacy. Social media companies seem to not really care that much about their users privacy - see Facebook for an example of this. Twitter is very unlikely to be any better, nor is any other social media platform.
 
+Anywho, there were some short thoughts on why I don't really care for social media.

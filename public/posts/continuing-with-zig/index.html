@@ -36,14 +36,16 @@ Moving to Zig for ARM Development - 0x738
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Moving to Zig for ARM Development"/>
-<meta name="twitter:description" content="This commit is an example of a serious decision for any codebase: the decision to change the implementation language. This is more or less complicated for a given codebase depending on its size and who&rsquo;s working on it. I&rsquo;ll be the first to admit that trOS isn&rsquo;t big and switching languages right now is far from a big problem - and it may never be. Nevertheless, given that it&rsquo;s my main project right now, the language I use to write it matters a lot."/>
+<meta name="twitter:description" content="I recently decided to move my toy RPI3 kernel over to Zig from Rust. I decided to do this both for some technical reasons, as well as some personal reasons. In the process of doing said transistion, I thought it&rsquo;d be a good idea to collect my thoughts and reasons on why I chose to move and make them avaiable here. So without further ado, here they are:
+Binary Size Compared to other embedded environments, I don&rsquo;t have to be nearly as concerned about binary size on the RPI3."/>
 
 <meta property="og:title" content="Moving to Zig for ARM Development" />
-<meta property="og:description" content="This commit is an example of a serious decision for any codebase: the decision to change the implementation language. This is more or less complicated for a given codebase depending on its size and who&rsquo;s working on it. I&rsquo;ll be the first to admit that trOS isn&rsquo;t big and switching languages right now is far from a big problem - and it may never be. Nevertheless, given that it&rsquo;s my main project right now, the language I use to write it matters a lot." />
+<meta property="og:description" content="I recently decided to move my toy RPI3 kernel over to Zig from Rust. I decided to do this both for some technical reasons, as well as some personal reasons. In the process of doing said transistion, I thought it&rsquo;d be a good idea to collect my thoughts and reasons on why I chose to move and make them avaiable here. So without further ado, here they are:
+Binary Size Compared to other embedded environments, I don&rsquo;t have to be nearly as concerned about binary size on the RPI3." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sjdh.us/posts/continuing-with-zig/" />
-<meta property="article:published_time" content="2019-02-11T18:30:32-05:00"/>
-<meta property="article:modified_time" content="2019-02-11T18:30:32-05:00"/>
+<meta property="article:published_time" content="2019-02-11T18:30:32-05:00" />
+<meta property="article:modified_time" content="2019-02-11T18:30:32-05:00" />
 
 
     
@@ -64,7 +66,7 @@ Moving to Zig for ARM Development - 0x738
 
         
 <div class="section" id="content">
-    Mon Feb 11, 2019 &#183; 1770 words
+    Mon Feb 11, 2019 &#183; 1078 words
     
     <div class="tag-container">
         
@@ -97,71 +99,40 @@ Moving to Zig for ARM Development - 0x738
     <hr/>
     
 
-<p>This <a href="https://github.com/sjdh02/trOS/commit/39cda4b516a8fe3d0c3c593316165cb938f8ffa5">commit</a>
-is an example of a serious decision for any codebase: the decision to change the implementation
-language. This is more or less complicated for a given codebase depending on its size and who&rsquo;s working
-on it. I&rsquo;ll be the first to admit that <code>trOS</code> isn&rsquo;t big and switching languages right now is far
-from a big problem - and it may never be. Nevertheless, given that it&rsquo;s my main project right now,
-the language I use to write it matters a lot. As a developer I want to be <em>happy</em> to write
-code. For me, there are two parts to being happy as a developer: caring about the project itself,
-and actively wanting to work on it. Programming languages seriously influence the latter of the two.
-If the language being used for a project makes me dread working on it, or if it causes  friction when
-I try to implement something, it&rsquo;s taking away from my happiness as a developer. Up until now,
-I&rsquo;ve been writing <code>trOS</code> in Rust. I recently came to the conclusion that Rust was becoming a major
-source of friction for me when working on <code>trOS</code>, so I began to consider other languages for
-a new implementation. After some thought, I made the decision to make a branch for <a href="https://ziglang.org">Zig</a>,
-and began porting over the code. Within a relatively short amount of time, I had fully ported the Rust version
-to Zig and had a functionally 1:1 implementation - including a few new features the Rust version had yet to
-receive. After some more thought, I decided to merge the Zig branch with master and remove the Rust implementation.
-This entry will go over the reasons I decided to commit to this change.</p>
+<p>I recently decided to move my toy RPI3 kernel over to Zig from Rust. I decided to do this both for some technical reasons, as well as some personal reasons. In the process of doing said transistion, I thought it&rsquo;d be a good idea to collect my thoughts and reasons on why I chose to move and make them avaiable here. So without further ado, here they are:</p>
 
 <h1 id="binary-size">Binary Size</h1>
 
-<p>Binary size is, for the RPI3, not as big of an issue as it is for other
-embedded development boards. Some of them have 16K of memory or less, while (from what I understand) the RPI3 can draw
-from the whole of an SD card. That being said, however, it&rsquo;s not as if I intend to only ever
-write code for the RPI3. If I want to confidently say to people
-&ldquo;&lsquo;X&rsquo; is a good language for embedded development&rdquo;, I want to be able to say that
-knowing that no matter the storage size - within reason, naturally - they&rsquo;re working with,
-that language will be able to conform to it. I&rsquo;ve already written a
-<a href="#">previous entry</a><sup>1</sup> regarding the Rust binary sizes, so I won&rsquo;t repeat all of that here.
-Instead, I&rsquo;ll offer this comparison: a Rust image, compiled with link-time optimizations
-and the more aggressive <code>z</code> option for size - ignoring debug symbols - results in a 22K binary.
-Zig, on the other hand, outputs a binary that is - again, ignoring debug symbols - 19.6K.
-If compiled with <code>-Drelease-small</code> (I believe this is equivalent
-to the rust compile options I used, as it does still include <code>.debug_*</code> sections, which
-will be ignored again), the binary size is 5K. Quite small, and more than capable
-of fitting on a device with 16K of storage. I, currently, know of no way to get a Rust binary
-down to this size.</p>
+<p>Compared to other embedded environments, I don&rsquo;t have to be nearly as concerned about binary size on the RPI3. That being said, who doesn&rsquo;t enjoy getting their kernel as small as possible? That aside, I&rsquo;d rather use a tool I know will work in more situations than not, so if I can consistently get a kernel around or under the average flash size of 16K, thats great.</p>
 
-<h1 id="build-times">Build Times</h1>
+<p>So, heres a rapid-fire comparison:</p>
 
-<p>Compile time complaints and Rust go hand-in-hand, it would seem. Many people have said their
-compile times resemble C++ codebases, some say they&rsquo;re reduced - though not by much. For me,
-they&rsquo;re okay at best. Not too slow, but not overly fast either - yet still slow enough to knock me
-out of rhythm. Zig, on the other hand, quite consistently wowed me with its compile speed.
-After the initial build (which took approximately 2 seconds or so, as reported by <code>time</code>),
-build times were easily under one second. Combined with the ability to add custom commands in
-a <code>build.zig</code> file allowed me to build and launch QEMU with the newly-built image in a single
-command, nearly instantly. Perhaps part of the faster build times is the (assumed) considerably smaller
-amount of LLVM IR Zig generates in comparison to Rust - either way, Zig is a clear victor in this
-category. Even if raw compile times had not been so different, the ability to add custom build commands
-is incredibly useful, and much more preferable than some shell scripts floating about.</p>
+<ul>
+<li>A Rust binary, compiled with LTO and <code>z</code> for size optimizations, is 22k.</li>
+<li>A Zig binary, compiled with <code>-Drelease-small</code> (which should be equivalent to <code>z</code> with Rust) is 5k.</li>
+</ul>
 
-<p>Note, of course, that caching plays a role in post-first build times. Either way, Zig still remains
-the faster of the two.</p>
+<p>Note that both of these still had debug symbols, but I subtracted the size of those from the sizes listed above. I&rsquo;m not entirely sure what Rust is adding in to make their binaries that much larger, but I can pretty confidently say that Zig wins out in this category.</p>
+
+<h1 id="build-times-systems">Build Times/Systems</h1>
+
+<p>Compile times are an age-old pain point for Rust, as it can sometimes even beat out C++ compile times - quite a feat. Now, I&rsquo;d expect on a codebase as small as mine it wouldn&rsquo;t be an issue; but, because of how cross-compiling currently works, it has to pull in packages and such to do it, which have to be compiled, which takes time. While that only has to happen once, it does still take a good amount of time.</p>
+
+<p>Zig, on the other hand, is ready to do cross-compiling to aarch out of the box. Combined with custom commands in <code>build.zig</code>, I can compile and launch the kernel in QEMU nearly instantly.</p>
+
+<p>That being said: after caching and initial builds, the build times are often fast enough that it isn&rsquo;t the end of the world. Rust is still slower, but not horrendously so. Zig still gets the edge here, because it is still faster, and supports custom commands in <code>build.zig</code> to help my workflow keep moving.</p>
 
 <h1 id="custom-allocators">Custom Allocators</h1>
 
-<p>Many times, features that use heap allocation are barred off to embedded developers for some time.
-This can be very frustrating, as it sometimes means you have to go in circles or devise roundabout
-solutions for a problem that you <em>know</em> could be dealt with much easier. Zig, interestingly, provides
-facilities to help mitigate this issue. Consider the following code:</p>
+<p>Unsuprisingly, embedded development tends to start from scratch for personal projects like mine. Anything to do with the heap is likely a good ways off right from the get-go, which forces you to produce roundabout or complicated solutions to an otherwise simple problems. Zig provides a way to get around this, by allowing you to reserve stack space to act as a heap. Heres an example with <code>HashMap</code>:</p>
 <div class="highlight"><pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zig" data-lang="zig">const std = @import(&#34;std&#34;);
 // Create the allocator array
 var hash_map_allocator_bytes: [100 * 1024]u8 = undefined;
+
 // Use a FixedBufferAllocator to create the actual allocator
-var hash_map_allocator_state = std.heap.FixedBufferAllocator.init(hash_map_allocator_bytes[0..]);
+var hash_map_allocator_state =
+    std.heap.FixedBufferAllocator.init(hash_map_allocator_bytes[0..]);
+
 // Store a pointer to the allocator
 const hash_map_allocator = &amp;hash_map_allocator_state.allocator;
 
@@ -171,89 +142,32 @@ defer map.deinit();
 
 // Put a value into the HashMap
 try map.put(1, 11);</code></pre></div>
-<p>In this code, while there is a type that needs to perform dynamic allocations (<code>HashMap</code>), there is
-no heap allocation truly happening. Instead, a static buffer of bytes has been created and substituted
-for the memory the <code>HashMap</code> allocates from. Using this technique, even in freestanding embedded code,
-any standard library data structure will work - all it needs is a buffer to allocate to. This unlocks
-a shocking amount of the standard library for use on freestanding platforms, sans OS specific features
-such as threads and file I/O of course. It also means you can create your own data types that need
-dynamic memory, and simply provide them with a <code>FixedBufferAllocator</code> for allocation.</p>
+<p>Even in an embedded environment, this works perfectly. In fact, a hefty chunk of the standard library will work in freestanding code, as all it needs to function is an allocator of some kind.</p>
 
-<p>Note that certain standard library features may not act as you&rsquo;d expect on freestanding code. For instance,
-the default panic handler will simply enter an infinite loop.</p>
+<p>Of course, there are some caveats. Since allocation in Zig requires <code>try</code> calls, any errors won&rsquo;t actually print if you haven&rsquo;t written a custom <code>panic()</code> function - the default freestanding implementation for <code>panic()</code> simply enters an infinite loop.</p>
 
 <h1 id="debugging-code-vs-knowledge">Debugging Code vs Knowledge</h1>
 
-<p>The Zig homepage lists the following statement under its &lsquo;Feature Highlights&rsquo; list:</p>
+<p>One somewhat annoying thing about a lot of programming languages is how they view developer choice regarding how to accomplish something. Most languages take on of two approaches: give you a lot of options at the cost of potentially overwhelming you, or give you one way to do something. Zig takes a bit of a different path to both of these. On the surface level, its more akin to the latter of the two; but in reality, you actually do have quite a few options on how to do something. Zig&rsquo;s goal, however, is to provide one <em>obvious</em> way to do something. So, while there may be a few ways to do x, there is one clear and easily understandable way to do x that you&rsquo;ll likely come across first.</p>
 
-<p><strong>Small, simple language. Focus on debugging your application rather than debugging your knowledge of a programming language.</strong></p>
+<p>Personally, I feel like Rust listed more towards the prior. Many times, it felt like swimming through a sea of documentation to try and find the best way to do something, which takes time.</p>
 
-<p>This is a point that can be easily overlooked when it comes to any programming language. Many languages often
-contain deep levels of complexity that are not always apparent on the surface. C++ is a good example of this,
-if you&rsquo;re looking for one. This hidden complexity, however, adds unneeded cognitive load on the programmer:
-often they are forced to think more about the semantics of the code they&rsquo;re writing than the logic behind
-it. Many times, I believe this leads the programmer to actually be less productive, and certainly enjoy
-programming less.</p>
-
-<p>I often found this to be the case when writing Rust code; that is, I was constantly referring to
-the documentation to find out whether I could do something at all, much less how it worked. Perhaps
-a more experienced Rust developer would not have needed to do this, but regardless, it was chewing
-into my productivity. Zig, on the other hand, reminded me of C: once I learned the basics, I rarely
-had need of the documentation. Many things are simply intuitive, and work as one might expect - especially
-given a C/C++ background. This led to me writing more code, and subjectively better code, because I was
-able to be confident that whatever I was using was the right tool for a job.</p>
+<p>In a sense, this leads to me spending more time &ldquo;debugging&rdquo; my understanding of the programming language, rather than debugging the code I&rsquo;ve written - which most definitely eats into productive time. While Rust proponents may claim that this evens out because Rust produces less bugs overall - which is perhaps true for larger codebases or certain projects - I personally found this to not be the case. All in all, I feel that Zig allows me to focus more on my code than the language I&rsquo;m writing it in.</p>
 
 <h1 id="developer-friction">Developer Friction</h1>
 
-<p>Developer friction is an oft covered topic in programming &ldquo;&rdquo;&ldquo;journalism&rdquo;&ldquo;&rdquo;, if you will.
-Personally, I find developer friction to be anything that is inbetween me and the
-resulting program I want to create. Certainly, there can never be zero friction; if nothing else,
-you are likely learning about a new problem or coming up with a specialized solution. However,
-Rust felt as if it was giving me a double-dose of friction: one from learning about my platform
-and deducing how to best write code for it, and another for learning what Rust was going and
-not going to let me do. It felt as if each time I came up with a solution, it only led to me
-having to write an <code>unsafe</code> block and take a wild guess as to whether or not I had used the right
-tool. Consider this code for taking a PSF font file and casting it to a struct
-pointer:</p>
-<div class="highlight"><pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#888"> </span><span style="color:#fb660a;font-weight:bold">let</span><span style="color:#888"> </span>font<span style="color:#888"> </span>=<span style="color:#888"> </span><span style="color:#fb660a;font-weight:bold">unsafe</span><span style="color:#888"> </span>{<span style="color:#888"> </span>core::ptr::read(FONT.as_ptr()<span style="color:#888"> </span><span style="color:#fb660a;font-weight:bold">as</span><span style="color:#888"> </span>*<span style="color:#fb660a;font-weight:bold">const</span><span style="color:#888"> </span>PSFFont)<span style="color:#888"> </span>};<span style="color:#888">
-</span></code></pre></div>
-<p>Far from a complex operation, and one you&rsquo;re likely familiar with if you&rsquo;ve ever done, well,
-anything with font files or any kind of binary data. However, notice a few things about
-this Rust code: first, it requires an unsafe block, which is understandable given how Rust
-feels about dealing with raw pointers. But should I really have to use this much syntax
-to accomplish a simple pointer cast? I certainly find it annoying to look at, and far
-from pleasant to read.</p>
+<p>As somewhat of a follow up to the last section, I want to wrap up with a bit on developer friction. I define developer friction as anything that gets inbetween me and my code. An example would be having to check docs constantly, as I mentioned previously.</p>
 
-<p>This becomes even more apparent if it is compared to the Zig version:</p>
+<p>But, for me, the biggest source of friction with Rust is its insistence on safety. I understand that the larger selling point of the language is safety, but when the recommendation to shrink down this pointer cast:</p>
+<div class="highlight"><pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#fb660a;font-weight:bold">let</span><span style="color:#888"> </span>font<span style="color:#888"> </span>=<span style="color:#888"> </span><span style="color:#fb660a;font-weight:bold">unsafe</span><span style="color:#888"> </span>{<span style="color:#888"> </span>core::ptr::read(FONT.as_ptr()<span style="color:#888"> </span><span style="color:#fb660a;font-weight:bold">as</span><span style="color:#888"> </span>*<span style="color:#fb660a;font-weight:bold">const</span><span style="color:#888"> </span>PSFFont)<span style="color:#888"> </span>};<span style="color:#888">
+</span></code></pre></div>
+<p>is &ldquo;write a macro&rdquo;, I have to question how much this &ldquo;safety&rdquo; is worth to me. I don&rsquo;t exactly feel like going through the process of learning how to write macros (more doc surfing!) and the process of writing and debugging one for something as simple as pointer casts. I can understand this safety-chase for critical codebases, where one slip up can potentially cost money or lives - but for my comparatively unimportant code, I&rsquo;d much rather write this:</p>
 <div class="highlight"><pre style="color:#fff;background-color:#111;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zig" data-lang="zig">const font = @ptrCast(*const PSFFont, &amp;fontEmbed);</code></pre></div>
-<p>Instead of all that syntax, there is a single assignment, and a very clear
-call to <code>@ptrCast</code>, making it obvious what is actually happening. Both
-of these work perfectly - they give me exactly what I need. But for me,
-the second one is a massive improvement - it may not have the &ldquo;safety&rdquo;
-a Rust program provides, but I can think about that in all the spare time
-I have from not having to think about which crate a pointer-casting function
-happens to be in.</p>
+<p>and accomplish the same thing.</p>
 
 <h1 id="conclusion">Conclusion</h1>
 
-<p>Ultimately, the choice of Zig was not a completely technical one. To be
-certain, compile times and binary sizes played a role in the decision,
-but the real factor was how much more productive I am. I spend time
-writing code and thinking about how to solve a particular problem,
-nothing else - it reminds me a lot of my time writing C, and I&rsquo;m
-quite fond of it. As Zig approaches release 0.4.0, I couldn&rsquo;t be
-happier with the language and the direction its heading - I look
-forward to seeing its future.</p>
-
-<h2 id="extra-thoughts">Extra Thoughts</h2>
-
-<p>To be clear, I think Rust has its place, and it isn&rsquo;t a bad language per se -
-but right now, and certainly on this project, it isn&rsquo;t a good fit for me.</p>
-
-<h3 id="footnotes">Footnotes</h3>
-
-<p><sup>1</sup> This post is not yet available, sorry! I recently switched static site generators and have yet to move it over. When the migration is complete,
-this footnote will be removed and the link will be corrected.</p>
+<p>To wrap up, I didn&rsquo;t choose Zig for completely techincal reasons - there was a decent mix of personal reasons in there too. Rust has its domains and projects thats its well suited to, but for this project and for me, Zig is better choice.</p>
 
 </div>
 

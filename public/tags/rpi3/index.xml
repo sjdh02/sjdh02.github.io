@@ -17,7 +17,8 @@
       <pubDate>Mon, 11 Feb 2019 18:30:32 -0500</pubDate>
       
       <guid>https://sjdh.us/posts/continuing-with-zig/</guid>
-      <description>This commit is an example of a serious decision for any codebase: the decision to change the implementation language. This is more or less complicated for a given codebase depending on its size and who&amp;rsquo;s working on it. I&amp;rsquo;ll be the first to admit that trOS isn&amp;rsquo;t big and switching languages right now is far from a big problem - and it may never be. Nevertheless, given that it&amp;rsquo;s my main project right now, the language I use to write it matters a lot.</description>
+      <description>I recently decided to move my toy RPI3 kernel over to Zig from Rust. I decided to do this both for some technical reasons, as well as some personal reasons. In the process of doing said transistion, I thought it&amp;rsquo;d be a good idea to collect my thoughts and reasons on why I chose to move and make them avaiable here. So without further ado, here they are:
+Binary Size Compared to other embedded environments, I don&amp;rsquo;t have to be nearly as concerned about binary size on the RPI3.</description>
     </item>
     
   </channel>
