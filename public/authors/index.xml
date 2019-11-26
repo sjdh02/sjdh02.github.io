@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | </title>
+    <link>https://samhood.xyz/authors/</link>
+      <atom:link href="https://samhood.xyz/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://samhood.xyz/img/icon-192.png</url>
+      <title>Authors</title>
+      <link>https://samhood.xyz/authors/</link>
+    </image>
+    
+    <item>
+      <title></title>
+      <link>https://samhood.xyz/authors/admin/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://samhood.xyz/authors/admin/</guid>
+      <description>&lt;p&gt;Hello! I&amp;rsquo;m Sam(uel J.) Hood, a Computer Science and Math student at LeTourneau University. I&amp;rsquo;m currently about halfway done with my BS,
+and am planning to go on to graduate school (MS and Ph.D) to further study Programming Language Theory, with a particular focus on type systems.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Robert Ford</title>
+      <link>https://samhood.xyz/authors/robert-ford/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://samhood.xyz/authors/robert-ford/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
