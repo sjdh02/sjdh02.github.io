@@ -18,7 +18,7 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "Flight Software Programmer"
+  title = "Pre-Flight Software Programmer"
   company = ""
   company_url = ""
   location = "LeTourneau University"
@@ -31,7 +31,7 @@ date_format = "Jan 2006"
   
   * Writing pathfinding code using a realistic model of an aircraft
   * Testing & Verifying Results 
-  * Working with a team to produce a UI to interact with the underlying path generation code
+  * Working with a team to produce a UI to interact with the underlying path generation code and present paths to pilots
   """
 
 

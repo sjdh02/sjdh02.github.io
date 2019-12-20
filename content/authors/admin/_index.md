@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Computer Science and Math (CSMA) Student
+role: CompSci + Math Double Major
 
 # Organizations/Affiliations
 organizations:
@@ -24,10 +24,14 @@ interests:
 - Programming Language Theory
 - Type Theory
 - Compiler Engineering
+- Philosophy
 
 education:
   courses:
-  - course: BS in Computer Science and Math
+  - course: BS in Computer Science
+    institution: LeTourneau University
+    year: 2018-
+  - course: BS in Mathematics
     institution: LeTourneau University
     year: 2018-
 
@@ -64,6 +68,6 @@ user_groups:
 - Visitors
 ---
 
-Hello! I'm Sam(uel J.) Hood, a Computer Science and Math student at LeTourneau University. I'm currently about halfway done with my BS,
+Hello! I'm Sam, a Computer Science and Mathematics student at LeTourneau University. I'm currently about halfway done with my degrees,
 and am planning to go on to graduate school (MS and Ph.D) to further study Programming Language Theory, with a particular focus on type systems.
 
