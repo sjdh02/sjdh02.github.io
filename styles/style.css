@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: white;
+}
+
+a {
+    text-decoration: wavy;
+    color: white;
+}
